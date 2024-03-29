@@ -34,9 +34,9 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile_test
+          file: ./Dockerfile
           platforms: linux/amd64
-          push: false
+          push: true
           tags: |
             dellear/puppeteer-base:latest
       -
