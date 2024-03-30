@@ -34,10 +34,10 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile
+          file: ./Dockerfile_debian
           platforms: linux/amd64
           push: true
-          tags: dellear/puppeteer-base:latest,dellear/puppeteer-base:ubuntu
+          tags: dellear/puppeteer-base:debian
       -
         name: Update repo description
         uses: peter-evans/dockerhub-description@v4
