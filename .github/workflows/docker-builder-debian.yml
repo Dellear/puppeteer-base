@@ -2,9 +2,10 @@ name: Docker Image Publish Debian
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
+    paths:
+      - 'Dockerfile_debian'
 
 jobs:
 
